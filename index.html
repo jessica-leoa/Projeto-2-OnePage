@@ -12,34 +12,47 @@
         <link rel="manifest" href="imagem/favicon/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Import fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
         <header class="flex-contanier-row menu">
             <!-- Logo -->
-            <img src="imagem/favicon/favicon.ico" alt="Logo do Site">
+            <div>
+                <img src="imagem/favicon/favicon.ico" alt="Logo do Site" id="logo">
+            </div>
+            
             <!-----Menu------>
-            <ul class="flex-contanier-row">
-                <li> <a href="#Equipe"> Equipe </a> </li>
+            <div>
+                <ul class="flex-contanier-row ">
+                    <li> <a href="#Equipe"> Equipe </a> </li>
 
-                <li> <a href="#Alongamentos"> Alongamentos </a> </li>
-                
-                <li> <a href="#BoxBraids"> Box Braids </a> </li>
+                    <li> <a href="#Alongamentos"> Alongamentos </a> </li>
                     
-                <li> <a href="#GhanaBraids"> Ghana Braids </a> </li>
-            </ul>
+                    <li> <a href="#BoxBraids"> Box Braids </a> </li>
+                        
+                    <li> <a href="#GhanaBraids"> Ghana Braids </a> </li>
+                </ul>                
+            </div>
         </header>
 
         <!-- Main -->
         <main class="flex-contanier-column" id="Destaque">
             <div id="destaque-texto">
-                <h2>BEM VINDOS</h2>
-                <h2>Studio</h2>
-                <h2>Vivá Afro Hair</h2>
-                <h3>
+                <div class="centralize">
+                    <h2>BEM VINDOS</h2>
+                    <h2>Studio</h2>
+                    <h2>Vivá Afro Hair</h2>
+                </div>
+
+                <p>
                     O Studio Vivá Afro Hair é um espaço especializados em cuidados com os cachos e crespos através de tranças, penteados, alongamentos, dreads, corte, além de acompanhar e ajudar pessoas na transição capilar e até mesmo no processo de descoberta e aceitação das suas verdadeiras raízes. 
-                </h3>
+                </p>
             </div>
         </main>
         <!-- Apresentação -->
@@ -62,31 +75,33 @@
             <div>
                 <h2>EQUIPE</h2>
             </div>
-            <div class="flex-contanier-row">
-                <!-- Monalisa -->
-                <div class="flex-contanier-column flex-contanier-size">
-                    <img src="imagem/Equipe_Monalisa.png" alt="Monalisa">
-                    <p>Fundadora do vivá, mais conhecida como mãos de fada. Trança desde criança.</p>
-                </div>
 
-                <!-- Jéssica -->
-                <div class="flex-contanier-column flex-contanier-size">
-                    <img src="imagem/Equipe_Jessica.png" alt="Jéssica">
-                    <p>Estudante de engenharia de Software no IFPE e Co-fundadora do Vivá.</p>
-                </div>
+            <div class="flex-contanier-row" >
+                    <!-- Monalisa -->
+                    <div class="Equipe styleEquipe" >
+                        <img src="imagem/Equipe_Monalisa.png" alt="Monalisa">
+                        <p>Fundadora do vivá, mais conhecida como mãos de fada. Trança desde criança.</p>
+                    </div>
 
-                <!-- Júlia -->
-                <div class="flex-contanier-column flex-contanier-size">
-                    <img src="imagem/Equipe_Julia.png" alt="Júlia">
-                    <p>Estudante e trancista nas horas vagas, conhecida como fadinha afro hair.</p>
-                </div>
+                    <!-- Jéssica -->
+                    <div  class="Equipe styleEquipe">
+                        <img src="imagem/Equipe_Jessica.png" alt="Jéssica">
+                        <p>Estudante de engenharia de Software no IFPE e Co-fundadora do Vivá.</p>
+                    </div>
 
-                <!-- Lucas -->
-                <div class="flex-contanier-column flex-contanier-size">
-                    <img src="imagem/Equipe_Lucas.png" alt="Lucas">
-                    <p>Trancista e amante das artes, conhecido como Peter Pan dos Dreads.</p>
-                </div>
+                    <!-- Júlia -->
+                    <div class="Equipe styleEquipe">
+                        <img src="imagem/Equipe_Julia.png" alt="Júlia">
+                        <p>Estudante e trancista nas horas vagas, conhecida como fadinha afro hair.</p>
+                    </div>
+
+                    <!-- Lucas -->
+                    <div class="Equipe styleEquipe">
+                        <img src="imagem/Equipe_Lucas.png" alt="Lucas">
+                        <p>Trancista e amante das artes, conhecido como Peter Pan dos Dreads.</p>
+                    </div>
             </div>
+            
         </section>
 
         <!-- Entrelace e Crochet Braids -->
