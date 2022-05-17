@@ -76,15 +76,17 @@
 }
 
 #Destaque {
-  background: url();
+  background: url(/imagem/background_destaque.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   line-height: 1.2em;
+  padding: 70px;
 }
 
 #DetalheAprest {
-  background: -webkit-gradient(linear, left top, right top, from(#e0659e), color-stop(22%, #e0659e), color-stop(49%, #f7a7cc), color-stop(51%, #f7a7cc), color-stop(81%, #e0659e), to(#e0659e));
-  background: linear-gradient(to right, #e0659e 0%, #e0659e 22%, #f7a7cc 49%, #f7a7cc 51%, #e0659e 81%, #e0659e 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0659e), color-stop(22%, #e0659e), color-stop(49%, #f7a7cc), color-stop(51%, #f7a7cc), color-stop(81%, #e0659e), to(#e0659e));
+  background: linear-gradient(to top, #e0659e 0%, #e0659e 22%, #f7a7cc 49%, #f7a7cc 51%, #e0659e 81%, #e0659e 100%);
   padding: 20px;
 }
 
@@ -100,11 +102,12 @@
 
 #Equipe {
   padding: 15px;
-  background: -webkit-gradient(linear, left top, right top, from(#bd723d), color-stop(36%, #fe6a00), color-stop(48%, #fe6a00), color-stop(60%, #fe6a00), to(#bd723d));
-  background: linear-gradient(to right, #bd723d 0%, #fe6a00 36%, #fe6a00 48%, #fe6a00 60%, #bd723d 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#bd723d), color-stop(36%, #fe6a00), color-stop(48%, #fe6a00), color-stop(60%, #fe6a00), to(#bd723d));
+  background: linear-gradient(to top, #bd723d 0%, #fe6a00 36%, #fe6a00 48%, #fe6a00 60%, #bd723d 100%);
 }
 
 #Equipe img {
+  padding: 4px;
   max-width: 150px;
 }
 
@@ -117,11 +120,14 @@
 }
 
 #Alongamentos {
-  background: #E5A228;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ba924d), color-stop(2%, #ba924d), color-stop(31%, #e5a228), color-stop(48%, #e5a228), color-stop(68%, #e5a228), color-stop(96%, #ba924d), to(#ba924d));
+  background: linear-gradient(to top, #ba924d 0%, #ba924d 2%, #e5a228 31%, #e5a228 48%, #e5a228 68%, #ba924d 96%, #ba924d 100%);
+  text-align: center;
 }
 
 #Alongamentos img {
   max-width: 250px;
+  padding: 15px;
 }
 
 #Alongamentos p {
@@ -130,15 +136,18 @@
 }
 
 #BoxBraids {
-  background: #FE2D02;
+  background: -webkit-gradient(linear, left bottom, left top, from(#943d2e), color-stop(2%, #943d2e), color-stop(30%, #fe2d02), color-stop(50%, #fe2d02), color-stop(70%, #fe2d02), color-stop(98%, #943d2e), to(#943d2e));
+  background: linear-gradient(to top, #943d2e 0%, #943d2e 2%, #fe2d02 30%, #fe2d02 50%, #fe2d02 70%, #943d2e 98%, #943d2e 100%);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  text-align: center;
 }
 
 #BoxBraids img {
   max-width: 250px;
+  padding: 15px;
 }
 
 #BoxBraids p {
@@ -147,8 +156,9 @@
 }
 
 #GhanaBraids {
-  background: #309992;
-  text-align: justify;
+  background: -webkit-gradient(linear, left bottom, left top, from(#25615d), color-stop(2%, #25615d), color-stop(30%, #309992), color-stop(50%, #309992), color-stop(70%, #309992), color-stop(98%, #25615d), to(#25615d));
+  background: linear-gradient(to top, #25615d 0%, #25615d 2%, #309992 30%, #309992 50%, #309992 70%, #25615d 98%, #25615d 100%);
+  text-align: center;
 }
 
 #GhanaBraids img {
@@ -161,11 +171,13 @@
 }
 
 #Nago {
-  background: #6C335C;
+  background: -webkit-gradient(linear, left bottom, left top, from(#4f1942), color-stop(2%, #4f1942), color-stop(30%, #6c335c), color-stop(50%, #6c335c), color-stop(70%, #6c335c), color-stop(98%, #4f1942), to(#4f1942));
+  background: linear-gradient(to top, #4f1942 0%, #4f1942 2%, #6c335c 30%, #6c335c 50%, #6c335c 70%, #4f1942 98%, #4f1942 100%);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  text-align: center;
 }
 
 #Nago img {
@@ -179,6 +191,7 @@
 
 #Dreads {
   background: #FE6A00;
+  text-align: center;
 }
 
 #Dreads img {
