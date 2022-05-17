@@ -46,6 +46,11 @@
           align-items: center;
 }
 
+.flex-contanier-size {
+  -webkit-box-sizing: 5rem;
+          box-sizing: 5rem;
+}
+
 .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -80,8 +85,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  line-height: 1.2em;
   padding: 70px;
+}
+
+#destaque-texto {
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1.2em;
+  padding: 10px;
 }
 
 #DetalheAprest {
@@ -101,7 +112,7 @@
 }
 
 #Equipe {
-  padding: 15px;
+  padding: 5px;
   background: -webkit-gradient(linear, left bottom, left top, from(#bd723d), color-stop(36%, #fe6a00), color-stop(48%, #fe6a00), color-stop(60%, #fe6a00), to(#bd723d));
   background: linear-gradient(to top, #bd723d 0%, #fe6a00 36%, #fe6a00 48%, #fe6a00 60%, #bd723d 100%);
 }
@@ -166,39 +177,6 @@
 }
 
 #GhanaBraids p {
-  text-indent: 35px;
-  text-align: justify;
-}
-
-#Nago {
-  background: -webkit-gradient(linear, left bottom, left top, from(#4f1942), color-stop(2%, #4f1942), color-stop(30%, #6c335c), color-stop(50%, #6c335c), color-stop(70%, #6c335c), color-stop(98%, #4f1942), to(#4f1942));
-  background: linear-gradient(to top, #4f1942 0%, #4f1942 2%, #6c335c 30%, #6c335c 50%, #6c335c 70%, #4f1942 98%, #4f1942 100%);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  text-align: center;
-}
-
-#Nago img {
-  max-width: 250px;
-}
-
-#Nago p {
-  text-indent: 35px;
-  text-align: justify;
-}
-
-#Dreads {
-  background: #FE6A00;
-  text-align: center;
-}
-
-#Dreads img {
-  max-width: 250px;
-}
-
-#Dreads p {
   text-indent: 35px;
   text-align: justify;
 }
