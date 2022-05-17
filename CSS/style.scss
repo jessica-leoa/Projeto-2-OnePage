@@ -73,23 +73,29 @@ $breakpoints: (
     background-repeat: no-repeat;
     line-height: 1.2em;
 }
-#Apresentacao{
+#DetalheAprest {
     background: $backgroundApresentacao;
-    padding: 10px;
+    padding: 20px;
+}
+#Apresentacao{
+    background: $backgroundMenu;
     text-align: center;        
     font-style: Arial;
-    padding: 5vw;
+    font-size: medium;
+    padding: 5vw 10vw 5vw 10vw;
     line-height: 1.2em;
+    border-radius: 100px;
 }
 #Equipe {
+    padding: 15px;
     background: $backgroundEquipe;
-    img {max-width: 200px;}
+    img {max-width: 150px;}
     p {
-        padding: 5px;
+        padding: 0.5px;
         text-align: center;
         font-style: italic;
         font-size: smaller;
-        width: 30%;
+        width: 40%;
     }
 }
 
