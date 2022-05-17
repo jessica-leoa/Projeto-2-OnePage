@@ -1,3 +1,114 @@
+//Cores
+$backgroundApresentacao: #F7A7CC;
+$backgroundEquipe: #FE6A00;
+$backgroundAlongamentos: #E5A228;
+$backgroundBoxBraids: #FE2D02;
+$backgroundGhanaBraids: #309992;
+$backgroundNago: #6C335C;
+$backgroundDreads: #FE6A00;
+$backgroundSecondaryColor: #000000;
+$fontSecondaryColor: #FFFFFF;
+$backgroundMenu: rgba(241, 191, 38, 0.8);
+//Gradientes
+$gradienteHTML: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+
+$breakpoints: (
+  xs: 0,    	//Smartphones em modo retrato
+  sm: 576px,	//Smartphones em modo paisagem ou Tablets em modo retrato
+  md: 768px,	//Tablets em modo paisagem
+  lg: 992px,	//Desktops
+  xl: 1200px,   //Desktops com alta definição HD e FHD
+  xxl: 2000px   //Desktops com ultra alta definição
+);
+
 *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    h1, h2, h3, p {
+        margin-bottom: 0.8em;
+    }
+}
+//Classes
+.flex-contanier-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-contanier-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
     
+.menu {
+    justify-content: space-between;
+    background-color: $backgroundMenu;
+    color: $backgroundSecondaryColor;
+    align-items: flex-start;
+    a {
+        color: $backgroundSecondaryColor;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+    }
+}
+
+.section-details {
+    width: 70vw;
+    padding: 3vw;
+}
+//id's
+#Destaque {
+    background: url() ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Equipe {
+    background: $backgroundEquipe;
+    img {max-width: 200px;}
+    p {
+        padding: 5px;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        width: 30%;
+    }
+}
+
+#Alongamentos {
+    background: $backgroundAlongamentos;
+    img {max-width: 250px};
+}
+
+#BoxBraids {
+    background: $backgroundBoxBraids;
+    flex-direction: row-reverse;
+    img {max-width: 250px};
+}
+
+#GhanaBraids {
+    background: $backgroundGhanaBraids;
+    img {max-width: 250px};
+}
+
+#Nago {
+    background: $backgroundNago
+    flex-direction: row-reverse;
+    img {max-width: 250px};
+}
+
+#Dreads {
+    background: $backgroundDreads;
+    img {max-width: 250px};
 }
