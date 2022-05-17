@@ -73,6 +73,7 @@ $breakpoints: (
     background: url() ;
     background-position: center;
     background-repeat: no-repeat;
+    h{line-height: 100em;}
 }
 #Equipe {
     background: $backgroundEquipe;
@@ -111,4 +112,8 @@ $breakpoints: (
 #Dreads {
     background: $backgroundDreads;
     img {max-width: 250px};
+}
+@media (min-width:60em){
+    li       { width:auto; display:inline; }
+    li:after { display:block; }
 }
