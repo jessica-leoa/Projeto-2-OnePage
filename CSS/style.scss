@@ -1,6 +1,6 @@
-//Cores
-$backgroundApresentacao: #F7A7CC;
-$backgroundEquipe: #FE6A00;
+//backgrounds
+$backgroundApresentacao: linear-gradient(to right, rgba(224,101,158,1) 0%, rgba(224,101,158,1) 22%, rgba(247,167,204,1) 49%, rgba(247,167,204,1) 51%, rgba(224,101,158,1) 81%, rgba(224,101,158,1) 100%);
+$backgroundEquipe: linear-gradient(to right, rgba(189,114,61,1) 0%, rgba(254,106,0,1) 36%, rgba(254,106,0,1) 48%, rgba(254,106,0,1) 60%, rgba(189,114,61,1) 100%);;
 $backgroundAlongamentos: #E5A228;
 $backgroundBoxBraids: #FE2D02;
 $backgroundGhanaBraids: #309992;
@@ -9,8 +9,6 @@ $backgroundDreads: #FE6A00;
 $backgroundSecondaryColor: #000000;
 $fontSecondaryColor: #FFFFFF;
 $backgroundMenu: rgba(241, 191, 38, 0.8);
-//Gradientes
-$gradienteHTML: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
 
 $breakpoints: (
   xs: 0,    	//Smartphones em modo retrato
@@ -73,7 +71,15 @@ $breakpoints: (
     background: url() ;
     background-position: center;
     background-repeat: no-repeat;
-    h{line-height: 100em;}
+    line-height: 1.2em;
+}
+#Apresentacao{
+    background: $backgroundApresentacao;
+    padding: 10px;
+    text-align: center;        
+    font-style: Arial;
+    padding: 5vw;
+    line-height: 1.2em;
 }
 #Equipe {
     background: $backgroundEquipe;
@@ -90,29 +96,51 @@ $breakpoints: (
 #Alongamentos {
     background: $backgroundAlongamentos;
     img {max-width: 250px};
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    };
 }
 
 #BoxBraids {
     background: $backgroundBoxBraids;
     flex-direction: row-reverse;
     img {max-width: 250px};
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    };
 }
 
 #GhanaBraids {
     background: $backgroundGhanaBraids;
     img {max-width: 250px};
+    text-align: justify;
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    };
 }
 
 #Nago {
-    background: $backgroundNago
+    background: $backgroundNago;
     flex-direction: row-reverse;
     img {max-width: 250px};
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    };
 }
 
 #Dreads {
     background: $backgroundDreads;
     img {max-width: 250px};
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    };
 }
+
 @media (min-width:60em){
     li       { width:auto; display:inline; }
     li:after { display:block; }
