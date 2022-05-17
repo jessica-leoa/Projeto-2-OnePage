@@ -1,1 +1,193 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* h1, * h2, * h3, * p {
+  margin-bottom: 0.8em;
+}
+
+.flex-contanier-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-contanier-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-contanier-size {
+  -webkit-box-sizing: 5rem;
+          box-sizing: 5rem;
+}
+
+.menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(241, 191, 38, 0.8);
+  color: #000000;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.section-details {
+  width: 70vw;
+  padding: 3vw;
+}
+
+#Destaque {
+  background: url(/imagem/background_destaque.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px;
+}
+
+#destaque-texto {
+  background-position: center;
+  background-repeat: no-repeat;
+  line-height: 1.2em;
+  padding: 10px;
+}
+
+#DetalheAprest {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e0659e), color-stop(22%, #e0659e), color-stop(49%, #f7a7cc), color-stop(51%, #f7a7cc), color-stop(81%, #e0659e), to(#e0659e));
+  background: linear-gradient(to top, #e0659e 0%, #e0659e 22%, #f7a7cc 49%, #f7a7cc 51%, #e0659e 81%, #e0659e 100%);
+  padding: 20px;
+}
+
+#Apresentacao {
+  background: rgba(241, 191, 38, 0.8);
+  text-align: center;
+  font-style: Arial;
+  font-size: medium;
+  padding: 5vw 10vw 5vw 10vw;
+  line-height: 1.2em;
+  border-radius: 100px;
+}
+
+#Equipe {
+  padding: 5px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#bd723d), color-stop(36%, #fe6a00), color-stop(48%, #fe6a00), color-stop(60%, #fe6a00), to(#bd723d));
+  background: linear-gradient(to top, #bd723d 0%, #fe6a00 36%, #fe6a00 48%, #fe6a00 60%, #bd723d 100%);
+}
+
+#Equipe img {
+  padding: 4px;
+  max-width: 150px;
+}
+
+#Equipe p {
+  padding: 0.5px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  width: 40%;
+}
+
+#Alongamentos {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ba924d), color-stop(2%, #ba924d), color-stop(31%, #e5a228), color-stop(48%, #e5a228), color-stop(68%, #e5a228), color-stop(96%, #ba924d), to(#ba924d));
+  background: linear-gradient(to top, #ba924d 0%, #ba924d 2%, #e5a228 31%, #e5a228 48%, #e5a228 68%, #ba924d 96%, #ba924d 100%);
+  text-align: center;
+}
+
+#Alongamentos img {
+  max-width: 250px;
+  padding: 15px;
+}
+
+#Alongamentos p {
+  text-indent: 35px;
+  text-align: justify;
+}
+
+#BoxBraids {
+  background: -webkit-gradient(linear, left bottom, left top, from(#943d2e), color-stop(2%, #943d2e), color-stop(30%, #fe2d02), color-stop(50%, #fe2d02), color-stop(70%, #fe2d02), color-stop(98%, #943d2e), to(#943d2e));
+  background: linear-gradient(to top, #943d2e 0%, #943d2e 2%, #fe2d02 30%, #fe2d02 50%, #fe2d02 70%, #943d2e 98%, #943d2e 100%);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: center;
+}
+
+#BoxBraids img {
+  max-width: 250px;
+  padding: 15px;
+}
+
+#BoxBraids p {
+  text-indent: 35px;
+  text-align: justify;
+}
+
+#GhanaBraids {
+  background: -webkit-gradient(linear, left bottom, left top, from(#25615d), color-stop(2%, #25615d), color-stop(30%, #309992), color-stop(50%, #309992), color-stop(70%, #309992), color-stop(98%, #25615d), to(#25615d));
+  background: linear-gradient(to top, #25615d 0%, #25615d 2%, #309992 30%, #309992 50%, #309992 70%, #25615d 98%, #25615d 100%);
+  text-align: center;
+}
+
+#GhanaBraids img {
+  max-width: 250px;
+}
+
+#GhanaBraids p {
+  text-indent: 35px;
+  text-align: justify;
+}
+
+@media (min-width: 60em) {
+  li {
+    width: auto;
+    display: inline;
+  }
+  li:after {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

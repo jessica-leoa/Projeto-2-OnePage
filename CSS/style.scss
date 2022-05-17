@@ -1,3 +1,154 @@
+//backgrounds
+$backgroundApresentacao: linear-gradient(to top, rgba(224,101,158,1) 0%, rgba(224,101,158,1) 22%, rgba(247,167,204,1) 49%, rgba(247,167,204,1) 51%, rgba(224,101,158,1) 81%, rgba(224,101,158,1) 100%);
+$backgroundEquipe: linear-gradient(to top, rgba(189,114,61,1) 0%, rgba(254,106,0,1) 36%, rgba(254,106,0,1) 48%, rgba(254,106,0,1) 60%, rgba(189,114,61,1) 100%);;
+$backgroundAlongamentos: linear-gradient(to top, rgba(186,146,77,1) 0%, rgba(186,146,77,1) 2%, rgba(229,162,40,1) 31%, rgba(229,162,40,1) 48%, rgba(229,162,40,1) 68%, rgba(186,146,77,1) 96%, rgba(186,146,77,1) 100%);;
+$backgroundBoxBraids:  linear-gradient(to top, rgba(148,61,46,1) 0%, rgba(148,61,46,1) 2%, rgba(254,45,2,1) 30%, rgba(254,45,2,1) 50%, rgba(254,45,2,1) 70%, rgba(148,61,46,1) 98%, rgba(148,61,46,1) 100%);
+$backgroundGhanaBraids: linear-gradient(to top, rgba(37,97,93,1) 0%, rgba(37,97,93,1) 2%, rgba(48,153,146,1) 30%, rgba(48,153,146,1) 50%, rgba(48,153,146,1) 70%, rgba(37,97,93,1) 98%, rgba(37,97,93,1) 100%);
+$backgroundRodape: rgba(241, 191, 38, 0.8); 
+$backgroundSecondaryColor: #000000;
+$fontSecondaryColor: #FFFFFF;
+$backgroundMenu: rgba(241, 191, 38, 0.8);
+
+$breakpoints: (
+  xs: 0,    	//Smartphones em modo retrato
+  sm: 576px,	//Smartphones em modo paisagem ou Tablets em modo retrato
+  md: 768px,	//Tablets em modo paisagem
+  lg: 992px,	//Desktops
+  xl: 1200px,   //Desktops com alta definição HD e FHD
+  xxl: 2000px   //Desktops com ultra alta definição
+);
+
 *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    h1, h2, h3, p {
+        margin-bottom: 0.8em;
+    }
+}
+//Classes
+.flex-contanier-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-contanier-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-contanier-size{
+    box-sizing: 5rem;
+}
     
+.menu {
+    justify-content: space-between;
+    background-color: $backgroundMenu;
+    color: $backgroundSecondaryColor;
+    align-items: flex-start;
+    a {
+        color: $backgroundSecondaryColor;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+    }
+}
+
+.section-details {
+    width: 70vw;
+    padding: 3vw;
+}
+//id's
+#Destaque {
+    background: url(/imagem/background_destaque.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
+}
+#destaque-texto {
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.2em;
+    padding: 10px;
+}
+#DetalheAprest {
+    background: $backgroundApresentacao;
+    padding: 20px;
+}
+#Apresentacao{
+    background: $backgroundMenu;
+    text-align: center;        
+    font-style: Arial;
+    font-size: medium;
+    padding: 5vw 10vw 5vw 10vw;
+    line-height: 1.2em;
+    border-radius: 100px;
+}
+#Equipe {
+    padding: 5px;
+    background: $backgroundEquipe;  
+    img {
+        padding: 4px;
+        max-width: 150px;
+    }
+    p {
+        padding: 0.5px;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        width: 40%;
+    }
+}
+
+#Alongamentos {
+    background: $backgroundAlongamentos;
+    img {
+        max-width: 250px;
+        padding: 15px;
+    }
+    text-align: center;
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    }
+}
+
+#BoxBraids {
+    background: $backgroundBoxBraids;
+    flex-direction: row-reverse;
+    img {
+        max-width: 250px;
+        padding: 15px;
+    }
+    text-align: center;
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    }
+}
+
+#GhanaBraids {
+    background: $backgroundGhanaBraids;
+    img {max-width: 250px};
+    text-align: center;
+    p{
+        text-indent: 35px;
+        text-align: justify;
+    }
+}
+
+@media (min-width:60em){
+    li       { width:auto; display:inline; }
+    li:after { display:block; }
 }
