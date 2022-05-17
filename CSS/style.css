@@ -1,1 +1,144 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* h1, * h2, * h3, * p {
+  margin-bottom: 0.8em;
+}
+
+.flex-contanier-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-contanier-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(241, 191, 38, 0.8);
+  color: #000000;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.section-details {
+  width: 70vw;
+  padding: 3vw;
+}
+
+#Equipe {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 77, 38, 0.8)), to(rgba(241, 101, 41, 0.8)));
+  background: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+}
+
+#Equipe img {
+  max-width: 200px;
+}
+
+#Equipe p {
+  padding: 5px;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  width: 30%;
+}
+
+#Alongamentos {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(38, 77, 228, 0.8)), to(rgba(41, 101, 241, 0.8)));
+  background: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+}
+
+#Alongamentos img {
+  max-width: 250px;
+}
+
+#BoxBraids {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(229, 162, 40, 0.8)), to(rgba(241, 191, 38, 0.8)));
+  background: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#BoxBraids img {
+  max-width: 250px;
+}
+
+#GhanaBraids {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+#GhanaBraids img {
+  max-width: 250px;
+}
+
+#Nago {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse img;
+          flex-direction: row-reverse img;
+  flex-direction-max-width: 250px;
+}
+
+#Dreads {
+  background: -webkit-gradient(linear, left top, right top, from(#BBBBBB), to(#DDDDDD));
+  background: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+}
+
+#Dreads img {
+  max-width: 250px;
+}
+/*# sourceMappingURL=style.css.map */

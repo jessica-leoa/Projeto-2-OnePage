@@ -1,3 +1,123 @@
+//Cores
+$primaryHtmlColor: #E44D26;
+$secondaryHtmlColor: #F16529;
+$primaryCssColor: #264DE4;
+$secondaryCssColor: #2965F1;
+$primaryJsColor: #E5A228;
+$secondaryJsColor: #F1BF26;
+$backgroundDefaultColor: #FFFFFF;
+$fontDefaultColor: #000000;
+$backgroundSecondaryColor: #000000;
+$fontSecondaryColor: #FFFFFF;
+$backgroundMenu: rgba(241, 191, 38, 0.8);
+//Gradientes
+$gradienteHTML: linear-gradient(90deg, rgba(228, 77, 38, 0.8) 0%, rgba(241, 101, 41, 0.8) 100%);
+$gradienteCSS: linear-gradient(90deg, rgba(38, 77, 228, 0.8) 0%, rgba(41, 101, 241, 0.8) 100%);
+$gradienteJS: linear-gradient(90deg, rgba(229, 162, 40, 0.8) 0%, rgba(241, 191, 38, 0.8) 100%);
+$gradienteLinks: linear-gradient(90deg, #BBBBBB 0%, #DDDDDD 100%);
+
+$breakpoints: (
+  xs: 0,    	//Smartphones em modo retrato
+  sm: 576px,	//Smartphones em modo paisagem ou Tablets em modo retrato
+  md: 768px,	//Tablets em modo paisagem
+  lg: 992px,	//Desktops
+  xl: 1200px,   //Desktops com alta definição HD e FHD
+  xxl: 2000px   //Desktops com ultra alta definição
+);
+
+$colorsLikert: (
+  1: #9E2731,   	 
+  2: #D41314,
+  3: #C75413,    
+  4: #F8CA2E,    
+  5: #C9E165,    
+  6: #7ADC54,   
+  7: #027F37   
+);
+
 *{
-    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    h1, h2, h3, p {
+        margin-bottom: 0.8em;
+    }
+}
+//Classes
+.flex-contanier-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-contanier-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    justify-content: space-between;
+    background-color: $backgroundMenu;
+    color: $backgroundSecondaryColor;
+    align-items: flex-start;
+    a {
+        color: $backgroundSecondaryColor;
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 10px;
+    }
+}
+
+.section-details {
+    width: 70vw;
+    padding: 3vw;
+}
+//id's
+#Equipe {
+    background: $gradienteHTML;
+    img {max-width: 200px;}
+    p {
+        padding: 5px;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        width: 30%;
+    }
+}
+
+#Alongamentos {
+    background: $gradienteCSS;
+    img {max-width: 250px};
+}
+
+#BoxBraids {
+    background: $gradienteJS;
+    flex-direction: row-reverse;
+    img {max-width: 250px};
+}
+
+#GhanaBraids {
+    background: $gradienteLinks;
+    img {max-width: 250px};
+}
+
+#Nago {
+    background: $gradienteLinks;
+    flex-direction: row-reverse
+    img {max-width: 250px};
+}
+
+#Dreads {
+    background: $gradienteLinks;
+    img {max-width: 250px};
 }
