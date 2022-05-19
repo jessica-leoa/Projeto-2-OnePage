@@ -8,6 +8,7 @@ $backgroundRodape: rgba(241, 191, 38, 0.8);
 $backgroundSecondaryColor: #000000;
 $fontSecondaryColor: #FFFFFF;
 $backgroundMenu: rgba(241, 191, 38, 0.8);
+$colorTopicos: #6c335c;
 
 $breakpoints: (
   xs: 0,    	//Smartphones em modo retrato
@@ -35,7 +36,7 @@ $breakpoints: (
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 1vh 1vw;
 }
 
 .flex-contanier-column {
@@ -45,15 +46,6 @@ $breakpoints: (
     justify-content: center;
     align-items: center;
 }
-
-.Equipe{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
     
 .menu {
     display: flex;
@@ -66,15 +58,62 @@ $breakpoints: (
         color: $backgroundSecondaryColor;
         text-decoration: none;
         font-size: 20px;
+        color: $colorTopicos;
     }
     ul {
         list-style-type: none;
     }
     li {
+        border-radius: 5px;
         margin: 10px;
         font-family: 'Montsserrat', sans-serif;
         font-weight: bold;
+
+        padding: 1vw;
     }
+
+    li:hover{
+        margin: 10px;
+        font-family: 'Montsserrat', sans-serif;
+        font-weight: bold;
+        background-color: $colorTopicos;
+        transition: 0.25s;
+
+        a{
+            color: $backgroundSecondaryColor;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            transition: 3ms;
+            
+        }
+    }
+}
+
+main h2{
+    color: $colorTopicos;
+}
+
+.colunaEsq{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 50%; 
+
+    p{
+        margin: 0vh 3vw;
+        text-align: justify;
+        margin-right: 4vw;
+    }
+    
+}
+
+.Equipe{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .styleEquipe{
@@ -87,14 +126,17 @@ $breakpoints: (
     padding: 3vw;
 }
 
-.centralizar{
-    text-align: center;
-    border: 3px solid green;
+.centralize{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
 }
 
 //id's
 #Destaque {
-    background: url(/Projeto-2-OnePage-Gaby/imagem/background_destaque.png);
+    background: url(/projWebOnePage/imagem/background_destaque.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +144,7 @@ $breakpoints: (
 }
 
 #destaque-texto {
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     line-height: 1.2em;
     padding: 10px;
@@ -178,32 +220,23 @@ $breakpoints: (
 footer{
     background-color: $backgroundRodape; 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5vh 1vw;
 
     ul{
         text-decoration: none;
         list-style: none;
     }
+
+    li{
+        padding: 0vh 1vw;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-/*$breakpoints: (
-  xs: 0,    	//Smartphones em modo retrato
-  sm: 576px,	//Smartphones em modo paisagem ou Tablets em modo retrato
-  md: 768px,	//Tablets em modo paisagem
-  lg: 992px,	//Desktops
-  xl: 1200px,   //Desktops com alta definição HD e FHD
-  xxl: 2000px   //Desktops com ultra alta definição
-);*/
 
 //Resp
 //Smartphones em modo retrato
@@ -225,6 +258,20 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .colunaEsq{
+        display: flex;
+        justify-content: flex-start;
+        align-items: left;
+        width: 50%; 
+    
+        p{
+            margin: 0vh 3vw;
+            text-align: center;
+            margin-right: 4vw;
+        }
+        
     }
 
     footer{

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +24,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px;
+  padding: 1vh 1vw;
 }
 
 .flex-contanier-column {
@@ -46,24 +45,6 @@
           align-items: center;
 }
 
-.Equipe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +63,7 @@
   color: #000000;
   text-decoration: none;
   font-size: 20px;
+  color: #6c335c;
 }
 
 .menu ul {
@@ -89,9 +71,70 @@
 }
 
 .menu li {
+  border-radius: 5px;
   margin: 10px;
   font-family: 'Montsserrat', sans-serif;
   font-weight: bold;
+  padding: 1vw;
+}
+
+.menu li:hover {
+  margin: 10px;
+  font-family: 'Montsserrat', sans-serif;
+  font-weight: bold;
+  background-color: #6c335c;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.menu li:hover a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  -webkit-transition: 3ms;
+  transition: 3ms;
+}
+
+main h2 {
+  color: #6c335c;
+}
+
+.colunaEsq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 50%;
+}
+
+.colunaEsq p {
+  margin: 0vh 3vw;
+  text-align: justify;
+  margin-right: 4vw;
+}
+
+.Equipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .styleEquipe {
@@ -104,13 +147,25 @@
   padding: 3vw;
 }
 
-.centralizar {
-  text-align: center;
-  border: 3px solid green;
+.centralize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #Destaque {
-  background: url(/Projeto-2-OnePage-Gaby/imagem/background_destaque.png);
+  background: url(/projWebOnePage/imagem/background_destaque.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,7 +173,7 @@
 }
 
 #destaque-texto {
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   line-height: 1.2em;
   padding: 10px;
@@ -215,12 +270,20 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5vh 1vw;
 }
 
 footer ul {
@@ -228,14 +291,10 @@ footer ul {
   list-style: none;
 }
 
-/*$breakpoints: (
-  xs: 0,    	//Smartphones em modo retrato
-  sm: 576px,	//Smartphones em modo paisagem ou Tablets em modo retrato
-  md: 768px,	//Tablets em modo paisagem
-  lg: 992px,	//Desktops
-  xl: 1200px,   //Desktops com alta definição HD e FHD
-  xxl: 2000px   //Desktops com ultra alta definição
-);*/
+footer li {
+  padding: 0vh 1vw;
+}
+
 @media (max-width: 576px) {
   #logo {
     width: 50px;
@@ -274,6 +333,23 @@ footer ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .colunaEsq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    width: 50%;
+  }
+  .colunaEsq p {
+    margin: 0vh 3vw;
+    text-align: center;
+    margin-right: 4vw;
   }
   footer {
     background-color: rgba(241, 191, 38, 0.8);
