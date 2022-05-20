@@ -135,11 +135,9 @@ main h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.styleEquipe {
   width: 250px;
   height: 300px;
+  font-size: small;
 }
 
 .section-details {
@@ -165,9 +163,9 @@ main h2 {
 }
 
 #Destaque {
-  background: url(/projWebOnePage/imagem/background_destaque.png);
-  background-size: cover;
-  background-position: center;
+  background: url(/imagem/background_destaque.png);
+  background-size: auto 100%;
+  background-position: right;
   background-repeat: no-repeat;
   padding: 70px;
 }
@@ -179,6 +177,20 @@ main h2 {
   padding: 10px;
 }
 
+#destaque-texto h3 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2%;
+}
+
+#destaque-texto h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+
+#destaque-texto p {
+  font-family: 'Raleway', sans-serif;
+}
+
 #DetalheAprest {
   background: -webkit-gradient(linear, left bottom, left top, from(#e0659e), color-stop(22%, #e0659e), color-stop(49%, #f7a7cc), color-stop(51%, #f7a7cc), color-stop(81%, #e0659e), to(#e0659e));
   background: linear-gradient(to top, #e0659e 0%, #e0659e 22%, #f7a7cc 49%, #f7a7cc 51%, #e0659e 81%, #e0659e 100%);
@@ -188,11 +200,23 @@ main h2 {
 #Apresentacao {
   background: rgba(241, 191, 38, 0.8);
   text-align: center;
-  font-style: Arial;
   font-size: medium;
   padding: 5vw 10vw 5vw 10vw;
   line-height: 1.2em;
-  border-radius: 100px;
+  border-radius: 1%;
+  margin-right: 350px;
+  margin-left: 100px;
+  margin-top: -70px;
+  margin-bottom: 70px;
+}
+
+#Apresentacao h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+#Apresentacao p {
+  font-family: 'Raleway', sans-serif;
 }
 
 #Equipe {
@@ -293,6 +317,10 @@ footer ul {
 
 footer li {
   padding: 0vh 1vw;
+}
+
+footer p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 576px) {
