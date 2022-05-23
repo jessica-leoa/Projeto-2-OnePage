@@ -284,6 +284,11 @@ main h2 {
   max-width: 250px;
 }
 
+#GhanaBraids img {
+  max-width: 250px;
+  padding: 15px;
+}
+
 #GhanaBraids p {
   text-indent: 35px;
   text-align: justify;
@@ -321,6 +326,7 @@ footer li {
 
 footer p {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 576px) {
@@ -468,8 +474,8 @@ footer p {
 
 @media (min-width: 1200px) {
   #logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
   header ul {
     display: -webkit-box;

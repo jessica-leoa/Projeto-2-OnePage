@@ -239,14 +239,17 @@ main h2{
     background: $backgroundGhanaBraids;
     img {max-width: 250px};
     text-align: center;
+    img {
+        max-width: 250px;
+        padding: 15px;
+    }
     p{
         text-indent: 35px;
         text-align: justify;
     }
-}
+}   
 
-
-//foorter
+//footer
 footer{
     background-color: $backgroundRodape; 
     display: flex;
@@ -267,6 +270,7 @@ footer{
     }
     p{
         font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
 
     }
 }
@@ -362,8 +366,8 @@ footer{
 
 @media (min-width: 1200px) {
     #logo {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     } 
     header ul{
         display: flex;
